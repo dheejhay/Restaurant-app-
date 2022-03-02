@@ -1,0 +1,66 @@
+/*Contact us page*/
+
+.contact {
+    background: url(../img/contact.jpg);
+    background-size: cover;
+    height: 105vh;
+    margin-top: -6em;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+ .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: -4em;
+    margin-top: 2em;
+}
+
+.Container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+} 
+
+.Container1 .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20em;
+}
+
+.Container1 .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.Container1 .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact-text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}

@@ -1,0 +1,18 @@
+<div class="menu-food">
+        <h1>Available Foods</h1>
+        
+
+        <% if(typeof menus !='undefined') { %>
+
+        <% menus.forEach((menu) => { %>
+        <h4>Name: <%= menu.name %> </h4>
+        <h4>Price: <%= menu.price %> </h4>
+        <h4>Status: <%= menu.status %> </h4>
+        <h4>Remarks: <%= menu.remarks %> </h4>
+        <a href ="/menus/add">Add</a>
+        <a href ="/menus/edit/<%= menu._id %>">Edit</a>
+        <a href ="/menus/delete/<%= menu._id %>">Delete</a>
+        <a href ="orders/add/<%= menu._id %>">Order</a>
+        <% }) %> 
+        <%  } %>
+</div>

@@ -1,0 +1,17 @@
+.feedback {
+    background-image: linear-gradient(rgba(0, 0, 0.0527) ,rgba(0, 0, 0, 0.5)) , url(Images/feedback.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#feedback-text {
+    color: white;
+    text-align: center;
+    margin-top: 10em;
+}
+
+#feedback-text h5 {
+    font-weight: lighter;
+}

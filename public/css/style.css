@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#Navbar {
+    width: 100%;
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* #Navbar.sticky {
+    padding: 5px 100px;
+    background: #252830;
+  }
+  
+  #Navbar.logo,
+  #Navbar.sticky ul li a {
+    color: #252830;
+  } */
+
+.Img {
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#Navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    color: white;
+}
+
+#Navbar ul :hover {
+    color: blue;
+}
+
+#Navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    transition: 0.5s;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.first {
+    background-image: url("../img/restaurant.jpg");
+    background-size: cover;
+    min-height: 170vh;
+    margin-top: -10em;
+}
+
+.text {
+    color: white;
+    padding: 70px;
+    padding-top: 14em;
+    /* margin-top: 4em; */
+}
+
+.text h2 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 1.2;
+    font-size: 60px;
+    letter-spacing: 0.5px;
+}
+
+.text h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 110px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Card img {
+    width: 15em;
+    align-self: center;
+}
+
+.Container {
+    padding: 50px;
+}
+
+.Container p {
+    text-align: center;
+}
+
+.Container h4 {
+    text-align: center;
+}
+
+.second {
+    text-align: center;
+    height: 90vh;
+}
+
+.title {
+    line-height: 10px;
+    font-size: 44px;
+    color: #222;
+    line-height: 1.2;
+    font-family: "Hind", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    padding: 70px;
+}
+
+.third {
+    background-image: url("../img/checked_menu.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 105vh;
+}
+
+.Eat {
+    color: white;
+    padding: 130px;
+    font-size: 70px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+.space {
+    letter-spacing: 1.5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.Menu {
+    color: white;
+    margin-left: 5.5em;
+    margin-top: -2em;
+    font-weight: lighter;
+}
+
+#Menu-items {
+    padding-left: 60em;
+    margin-top: -24rem;
+    color: white;
+    /* display: block; */
+    /* transform: translateY(0); */
+    /* transition: ease;
+    animation: fade 3s;
+    transition: ease-in-out; */
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-out-contract-bck 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    /* transition-timing-function: ease-in-out;
+   transition: 3s; */
+}
+
+#Menu-items h3 {
+    padding-left: 65px;
+}
+
+.button {
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin-left: 10em;
+    margin-top: 2em;
+    width: 12em;
+}
+
+.Responsive {
+    background-image: url("../img/pattern-bg2.png");
+}
+
+.item ul {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+}
+
+.item h3 {
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.item p {
+    color: black;
+    text-align: center;
+}
+
+.caurosel_container {
+    background-image: url("../img/bg21.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px;
+    min-height: 85vh;
+    margin-top: -1em;
+}
+
+.stars {
+    text-align: center;
+    padding: 150px;
+    height: 500px;
+}
+
+.fa-star {
+    color: #ffd200;
+    font-size: 1.5em;
+}
+
+.stars p {
+    margin-top: 2.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+
+.stars small {
+    color: lightgrey;
+    font-size: 20px;
+    opacity: 0.5;
+    padding: 20px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140px;
+    gap: 10em;
+    background-image: url("../img/bg5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 75vh;
+}
+
+.counter h1 {
+    font-size: 80px;
+    margin: 0 0 10px 0;
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.counter i {
+    opacity: 0.3;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.counter p {
+    font-size: 20px;
+}
+
+.Booking {
+    background-image: url("../img/bg36.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+}
+
+.wrap {
+    width: 85%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 3rem;
+}
+
+.wrap h1 {
+    margin: 0 0 60px 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15rem;
+    padding-bottom: 3rem;
+}
+
+.flex p {
+    color: white;
+    font-family: "Hind", sans-serif;
+    font-size: 17px;
+    margin-bottom: 60px;
+}
+
+.span {
+    color: white;
+    font-family: "Hind", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding-bottom: 20px;
+}
+
+.span span {
+    padding-left: 20px;
+}
+
+.span i {
+    opacity: 0.5;
+}
+
+input {
+    display: inline;
+    width: 130%;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: white;
+}
+
+input[type="text"] {
+    border-top: 0.8px solid gray;
+    border-bottom: 0.8px solid gray;
+    height: 4rem;
+    color: white;
+}
+
+input[type="email"] {
+    border-bottom: 0.8px solid gray;
+    height: 4rem;
+}
+
+input[type="message"] {
+    border-bottom: 0.8px solid gray;
+    height: 7em;
+}
+
+.button1 {
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 3rem;
+    width: 130%;
+    height: 12vh;
+}
+
+.button1 h2 {
+    margin-top: -1.1em;
+    font-weight: lighter;
+}
+
+.fa-edit {
+    margin-top: -3em;
+    margin-right: 4.5em;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.Footer {
+    background-color: #252830;
+    height: 30vh;
+}
+
+.Footer img {
+    padding-left: 8em;
+    margin-top: 5em;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.edit-content {
+    padding-left: 10em;
+    margin-top: -2.5em;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-icons {
+    padding-left: 35em;
+    font-size: 25px;
+    margin-top: -1em;
+    color: white;
+    opacity: 0.5;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+    #Navbar ul {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        margin: 2.5rem 0;
+    }
+
+    #Navbar ul.active {
+        left: 0;
+    }
+
+    #Navbar ul :hover {
+        color: blue;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}

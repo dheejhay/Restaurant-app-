@@ -1,0 +1,22 @@
+<div class="edit-form">
+    <form method="post" action="">
+        <h2>Menus</h2>
+        <div class="input-box">
+            <input value="<%= menu.name %>" type="text" id="name" name="name" required="required">
+            <span>Name</span>
+        </div>
+        <div class="input-box">
+            <input value="<%= menu.price %>" type="text" id="price" name="price" required="required">
+            <span>Price</span>
+        </div>
+        <div class="input-box"> 
+            <input value="<%= menu.status %>" type="text" id="status" name="status" required="required">
+            <span>Status</span>
+        </div>
+        <div class="input-box">
+            <input value="<%= menu.remarks %>" type="text" id="remarks" name="remarks" required="required">
+            <span>Remarks</span>
+        </div>
+        <button class="send" type="submit" value="Submit">Send</button>
+    </form>
+</div>

@@ -1,0 +1,89 @@
+/*About us page*/
+ 
+.about-text {
+    margin-left: 20em;
+    padding-top: 12em;
+}
+
+.about-text h1{
+    color: white;
+}
+
+.about-text a {
+    text-decoration: none;
+    margin-left: 50em;
+    color: white;
+}
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0.0525) ,rgba(0, 0, 0, 0.5)) ,url(../img/About.jpg); 
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    margin-top: -6em;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.read {
+    background: burlywood;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 10em;
+    margin-left: -0.5em;
+    margin-top: -2em;
+}
+
+.read:hover {
+    background: transparent;
+    border: 2px solid burlywood;
+    cursor: pointer;
+}
+
+.output h3 {
+    color: white;
+}
+
+.comment-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 3px;
+    margin-top: 1em;
+    /* height: 100vh; */
+    /* justify-content: center; */
+}
+
+.comment-area h5 {
+    color: white;
+}
+
+.about-comment {
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+}
+
+.about-card{
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    width :22em;
+    height: 12em;
+
+}
+.about-h5{
+    text-align: center;
+    margin-top: 1em;
+}
+.about-link{
+margin-left: 10em;
+}

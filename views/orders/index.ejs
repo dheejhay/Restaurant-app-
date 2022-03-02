@@ -1,0 +1,17 @@
+<div class="orders-made">
+    <h1>ORDER DETAILS</h1>
+
+    <a href="/menu">Menus</a>
+    <% if(typeof orders != 'undefined') { %>
+
+    <% orders.forEach((order) => { %>
+        <h4>Name: <%= order.customer %></h4>
+        <h4>Menu: <%= order.menu.name %></h4>
+        <h4>Cost: <%= order.cost %></h4>
+        <p>Date: <span><%= order.order_date %></span></p>
+        <a href ="/order/edit/<%= order._id %>">Edit</a>
+        <a href ="/order/delete/<%= order._id %>">Delete</a>
+        <% }) %>
+        <% } %>
+</div>
+

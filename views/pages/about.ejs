@@ -1,0 +1,32 @@
+<div class="head">
+        <div class="main">
+            <div class="about-text">
+                <a href='../comments/add'>Post a comment</a>
+                <h1>ABOUT US</h1>
+                <p>Find some reason to love life in Paris visiting Select, let the local sunrise and sunsets, delicious
+                    foods and incredibly nice people enchant you.<br>Great service, good foodand the gorgoeus view to
+                    the
+                    port will make your visit unforgettable, while the amiable climate will only add to the overall
+                    atmosphere.</p>
+                <button class="read">Read More</button>
+            </div>
+
+            <h1 class="about-comment">COMMENTS</h1>
+            <div class="comment-area">
+                <% if (typeof comments != 'undefined') { %>
+
+                <% comments.forEach((comment) => { %>
+                    <div class="about-card">
+                    <h5 class="about-h5">Name: <%- comment.fullName -%></h5>
+                    <h5 class="about-h5">Email: <%- comment.email -%></h5>
+                    <h5 class="about-h5">Comment: <%- comment.comment -%></h5>
+                    <a  class ="about-link" href ="comments/edit<%- comment._id -%>">Edit</a>
+                </div>
+               <% }) %>                 
+               
+                <% } %>
+          
+            </div>
+        </div>
+    
+</div>
